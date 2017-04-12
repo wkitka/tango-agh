@@ -18,4 +18,5 @@ Przydatne linki:
 3) Python:
     a) https://learnpythonthehardway.org/book/
     b) https://campus.datacamp.com/courses/intro-to-python-for-data-science 
-    c) https://www.learnpython.org/pl/Zmienne_i_typy 
+    c) https://www.codecademy.com/learn/python 
+    d) https://www.learnpython.org/pl/Zmienne_i_typy 

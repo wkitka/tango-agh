@@ -1,3 +1,5 @@
+Zajêcia w poniedzia³ki o 18:30 w 316 B1.
+
 Wymagane na zajêciach:
 1) komputer
 2) zainstalowany VirtualBox: https://www.virtualbox.org

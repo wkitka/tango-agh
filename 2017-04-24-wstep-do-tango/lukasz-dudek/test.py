@@ -1,5 +1,5 @@
-import tango
+import PyTango
 
-db = tango.Database()
+db = PyTango.Database()
 print db.get_info()
 

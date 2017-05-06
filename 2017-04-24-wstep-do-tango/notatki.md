@@ -4,8 +4,11 @@ Notatki z zajęć 2
 Odpalenie VM z Tango.
 --------------------
 
-Instalacja VirtualBoxa, ściągnięcie i rozpakowanie dysku TangoBox.
-Problemy
+1. Instalacja VirtualBoxa.
+2. Ściągnięcie i rozpakowanie dysku TangoBox.
+3. Problemy z VirtualBoxem:
+    1. https://superuser.com/questions/866962/why-does-virtualbox-only-have-32-bit-option-no-64-bit-option-on-windows-7
+    2. http://www.fixedbyvonnie.com/2014/11/virtualbox-showing-32-bit-guest-versions-64-bit-host-os/
 
 Uzupełnienia
 ------------

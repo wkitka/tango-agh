@@ -9,7 +9,7 @@ Punkt organizacyjny
 
 Przygotowanie do zajęć
 ----------------------
-1. Instalacja pipa: `sudo apt get install python-pip`
+1. Instalacja pipa: `sudo apt-get install python-pip`
 2. Upgrade taurusa: `sudo pip install -U taurus`
 
 Prezentacja biblioteki Taurus

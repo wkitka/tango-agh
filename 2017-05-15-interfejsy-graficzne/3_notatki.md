@@ -89,7 +89,7 @@ JDraw
 Zadanie domowe
 --------------
 1. Przygotować TaurusGUI z panelami synoptycznymi linii UARPES i PEEM/XAS z SOLARIS na
-podstawie załączonego schematu.
+podstawie załączonych schematów.
 2. Uzupełnienie paneli urządzeniami dowolne (przynajmniej 5 urządzeń na schemacie).
 3. TaurusForm i TaurusTrend takie, jak na zajęciach (prezentujące pozycje wszystkich motorów
 i ich sumę).

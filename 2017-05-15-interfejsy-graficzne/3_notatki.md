@@ -5,6 +5,7 @@ Punkt organizacyjny
 -------------------
 1. Co z salą?
 2. Czy forma prezentacji notatek jest w porządku?
+3. Praktyki!
 
 Przygotowanie do zajęć
 ----------------------

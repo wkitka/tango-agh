@@ -15,8 +15,8 @@ Przygotowanie do zajęć
 Prezentacja biblioteki Taurus
 -----------------------------
 1. Biblioteka graficzna do wizualizacji różnych elementów systemu Tango:
-    i. API dla programistów
-    ii. Proste narzędzia dla użytkowników
+    1. API dla programistów
+    2. Proste narzędzia dla użytkowników
 2. Jest rozszerzeniem biblioteki PyQt4 - bindingu Qt do Pythona.
 3. Adaptacja do innych systemów jest rozwijana.
 4. Dokumentacja dostępna tu: http://www.taurus-scada.org/

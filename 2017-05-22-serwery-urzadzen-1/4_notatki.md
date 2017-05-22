@@ -48,3 +48,15 @@ python FirstOrderStepResponse.py test
     
 Zadanie domowe:
 ---------------
+1. Napisać serwer, który wylicza kąt z wartości atrybutu `double_scalar` urządzenia typu TangoTest
+(np. `sys/tg_test/1`).
+2. Nazwa urządzenia, którego atrybut odczytujemy powinna być we właściwości urządzenia.
+2. Wskazówki:
+    1. Amplituda zmian tego atrybutu to 360.
+    2. Do obliczania arcus sinus można użyć funkcji `numpy.arcsin`.
+    3. Odczyt atrybutu realizujemy przy pomocy klasy `PyTango.AttributeProxy`, np.:
+```python
+import PyTango
+attr_proxy = PyTango.AttributeProxy('sys/tg_test/1/double_scalar')
+value = attr_proxy.read().value  # metoda read() zwraca obiekt DeviceAttribute
+```

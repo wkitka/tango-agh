@@ -34,7 +34,7 @@ Przykładowy serwer
 3. Pola chronione.
 4. Uruchomienie serwera:
 ```console
-python FirstOrderStepResponse.py test
+python MyServer.py instance_name
 ```
 
 Ćwiczenie: własny serwer urządzeń

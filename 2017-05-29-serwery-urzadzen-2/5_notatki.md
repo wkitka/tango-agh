@@ -29,12 +29,12 @@ System logowania w Tango:
     7. Kolejność:
         1. DEBUG < INFO < WARN < ERROR < FATAL < OFF
 2. Zapis logów:
-    Podanie informacji w odpowiednim miejscu:
+    1. Podanie informacji w odpowiednim miejscu:
         ```python
         self.debug_stream("-errorIndex: {}".format(errorIndex))
         ```
 3. Odczyt logów:
-    Aplikacja LogViewer.
+    1. Aplikacja LogViewer.
     
 Ćwiczenie:
 ----------

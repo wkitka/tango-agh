@@ -97,4 +97,4 @@ class MyDevice(Device):
 	2. `DevState.WARNING` dla wartości pomiędzy 20, a 30,
 	3. `DevState.ON` dla wartości większych od 30.
 4. Dodać atrybut, który odczytuje wartości atrybutu `double_scalar` urządzenia typu TangoTest. Ustawić mu polling na 100 ms oraz zapisywać jego aktualną wartość do debug_stream.
-5. Dodać komendę, która będzie zmieniać jakość powyższego atrybutu pomiędzy wszystkimi dostępnymi. 
+5. Dodać komendę, która będzie zmieniać jakość powyższego atrybutu pomiędzy wszystkimi dostępnymi. Należy również tą komendę odpytywać co 1,25 s. 

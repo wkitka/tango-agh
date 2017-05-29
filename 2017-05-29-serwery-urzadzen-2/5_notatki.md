@@ -90,10 +90,10 @@ class MyDevice(Device):
     
 Ćwiczenie
 ---------
-1. Napisać serwer urządzeń, który wylicza maksimum z atrybutu `double_image_ro` urządzenia typu TangoTest (np. `sys/tg_test/1`).
+1. Napisać serwer urządzeń, który wylicza maksimum z atrybutu `double_image_ro` urządzenia typu TangoTest (np. `sys/tg_test/1`). Dopisać fragment kodu odpowiadający za wysyłanie zdarzeń.
 2. Nazwa urządzenia, którego atrybut odczytujemy powinna być we właściwości urządzenia.
 3. Uzależnić stan urządzenia od wartości powyższego atrybutu, np. 
-	1. `DevState.ALARM` dla wartości mniejszych od 20,
+	1. `DevState.OFF` dla wartości mniejszych od 20,
 	2. `DevState.WARNING` dla wartości pomiędzy 20, a 30,
 	3. `DevState.ON` dla wartości większych od 30.
 4. Dodać atrybut, który odczytuje wartości atrybutu `double_scalar` urządzenia typu TangoTest. Ustawić mu polling na 100 ms oraz zapisywać jego aktualną wartość do debug_stream.

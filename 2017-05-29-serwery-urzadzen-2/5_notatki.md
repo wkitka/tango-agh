@@ -48,8 +48,8 @@ Schematy komunikacyjne
         def read_MyAttr(self):
             value = 0.0
             attr_quality = AttrQuality.ATTR_WARNING
-            self.push_change_event(value, time(), attr_quality)
-            self.push_archive_event(value, time(), attr_quality)
+            self.push_change_event("MyAttr", value, time(), attr_quality)
+            self.push_archive_event("MyAttr", value, time(), attr_quality)
             return value, time(), attr_quality
         ```
     5.  Prosta subskrypcja po stronie klienta:
@@ -90,3 +90,11 @@ class MyDevice(Device):
     
 Ćwiczenie
 ---------
+1. Napisać serwer urządzeń, który wylicza maksimum z atrybutu `double_image_ro` urządzenia typu TangoTest (np. `sys/tg_test/1`).
+2. Nazwa urządzenia, którego atrybut odczytujemy powinna być we właściwości urządzenia.
+3. Uzależnić stan urządzenia od wartości powyższego atrybutu, np. 
+	1. `DevState.ALARM` dla wartości mniejszych od 20,
+	2. `DevState.WARNING` dla wartości pomiędzy 20, a 30,
+	3. `DevState.ON` dla wartości większych od 30.
+4. Dodać atrybut, który odczytuje wartości atrybutu `double_scalar` urządzenia typu TangoTest. Ustawić mu polling na 100 ms oraz zapisywać jego aktualną wartość do debug_stream.
+5. Dodać komendę, która będzie zmieniać jakość powyższego atrybutu pomiędzy wszystkimi dostępnymi. 

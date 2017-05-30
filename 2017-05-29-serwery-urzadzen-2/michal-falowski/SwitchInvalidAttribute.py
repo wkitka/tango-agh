@@ -19,10 +19,9 @@ from PyTango.server import run
 from PyTango.server import Device, DeviceMeta
 from PyTango.server import attribute, command
 from PyTango import AttrQuality, DispLevel, DevState
-from PyTango import AttrWriteType, PipeWriteType
+from PyTango import AttrWriteType
 # Additional import
 # PROTECTED REGION ID(SwitchInvalidAttribute.additional_import) ENABLED START #
-import re
 # PROTECTED REGION END #    //  SwitchInvalidAttribute.additional_import
 
 __all__ = ["SwitchInvalidAttribute", "main"]
@@ -135,10 +134,8 @@ class SwitchInvalidAttribute(Device):
     @DebugIt()
     def SwitchInvalid(self, argin):
         # PROTECTED REGION ID(SwitchInvalidAttribute.SwitchInvalid) ENABLED START #
-        #argin = re.sub(r"\s+", "", argin, flags=re.UNICODE)
         if "1" in argin:
             if self.Attribute1.get_quality() == AttrQuality.ATTR_VALID:
-                print self.Attribute1.get_quality()
                 self.Attribute1.set_quality(AttrQuality.ATTR_INVALID)
             else:
                 self.Attribute1.set_quality(AttrQuality.ATTR_VALID)
@@ -158,10 +155,10 @@ class SwitchInvalidAttribute(Device):
             else:
                 self.Attribute4.set_quality(AttrQuality.ATTR_VALID)
         if "5" in argin:
-            if self.Attribute5.get_quality() == AttrQuality.VALID:
+            if self.Attribute5.get_quality() == AttrQuality.ATTR_VALID:
                 self.Attribute5.set_quality(AttrQuality.ATTR_INVALID)
             else:
-                self.Attribute5.set_quality(AttrQuality.VALID)
+                self.Attribute5.set_quality(AttrQuality.ATTR_VALID)
 
         else:
             pass

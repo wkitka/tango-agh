@@ -14,6 +14,50 @@ Systemy [SCADA](https://en.wikipedia.org/wiki/SCADA)
     1. Zenon
     2. InTouch
 
-[Sardana](http://sardana-controls.org/en/latest/)
----------
-1. 
+[Sardana](http://sardana-controls.org/en/latest/) - główne cechy
+----------------------------------------------------------------
+1. Zarządzanie eksperymentami na liniach badawczych.
+2. Prowadzenie pomiarów i zapis danych z nich pochodzących.
+3. Prosty i zunifikowany dostęp do ruchu komponentami linii.
+4. W całości napisana w Pythonie 2.7.
+5. Szeroko używana w środowisku synchrotronów europejskich.
+
+Architektura Sardany
+--------------------
+
+![sardana-architecture](http://sardana-controls.org/en/latest/_images/sardana_sketch.png)
+
+1. Interfejsy użytkownika:
+    1. GUI oparte na Taurusie: gotowe i w kawałkach.
+    2. Interfejs linii poleceń `spock`.
+2. Dwie części serwera urządzeń Sardana:
+    1. Serwer makr (`MacroServer`) - przechowuje i wykonuje procedury od użytkowników.
+    2. Pula urządzeń (`Pool`) - zarządza urządzeniami i wykonuje na nich bezpośrednie operacje.
+        1. Kontrolery do różnych typów urządzeń i kanałów pomiarowych (w tym czysto programowych).
+        2. Pośrednicznie między warstwą Sardany a Tango.
+        3. Synchronizacja operacji.
+        4. Grupowanie urządzeń.
+3. Powiązania z systemem sterowania Tango.
+
+Ćwiczenie - uruchomienie makr
+-----------------------------
+1. Uruchomić polecenie `spock` w konsoli.
+2. Znaleźć w dokumentacji makra do:
+    1. Wypisania wszystkich motorów.
+    2. Wypisania wszystkich kontrolerów.
+    3. Poruszenia motorem  `mot01` do pozycji 100.
+    
+Skan
+----
+1. Zbieranie danych w trakcie ruchu elementów zmotoryzowanych.
+2. Jakie dane zbierane są w czasie skanów?
+3. Typy skanów:
+    1. Relatywne / absolutne.
+    2. Jedno- / wielowymiarowe.
+    
+Ćwiczenie - skany
+-----------------
+1. Uruchomić `spock` w konsoli.
+2. Wpisać: `senv ScanDir /home/tango-cs/Documents/`, aby ustawić miejsce zapisywania danych ze skanów.
+3. Wpisać: `senv ScanFile test_scan.dat`, aby ustawić plik do zapisywania danych.
+4. Uruchomić polecenie `dscan?`, a następnie uruchomić skan.

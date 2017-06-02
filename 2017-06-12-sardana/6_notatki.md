@@ -42,7 +42,7 @@ Architektura Sardany
 Ćwiczenie - uruchomienie makr
 -----------------------------
 1. Uruchomić polecenie `spock` w konsoli.
-2. Znaleźć w dokumentacji makra do:
+2. Znaleźć w [dokumentacji](http://sardana-controls.org/en/latest/users/standard_macro_catalog.html) makra do:
     1. Wypisania wszystkich motorów.
     2. Wypisania wszystkich kontrolerów.
     3. Poruszenia motorem  `mot01` do pozycji 100.
@@ -61,3 +61,14 @@ Skan
 2. Wpisać: `senv ScanDir /home/tango-cs/Documents/`, aby ustawić miejsce zapisywania danych ze skanów.
 3. Wpisać: `senv ScanFile test_scan.dat`, aby ustawić plik do zapisywania danych.
 4. Uruchomić polecenie `dscan?`, a następnie uruchomić skan.
+5. Uruchomić polecenie `expconf`.
+
+Zadanie domowe
+--------------
+1. Napisać makro, które:
+    1. Ustawi `ScanDir` i `ScanFile`.
+    2. Ustawi grupę pomiarową (`ActiveMntGrp`) na `mntgrp01`.
+    3. Uruchomi `dscan` motorem `mot01` (dobrać samemu parametry skanu).
+2. Samouczek pisania makr jest dostępny [tu](http://sardana-controls.org/en/latest/devel/howto_macros/macros_general.html).
+3. Dołączenie makr do `MacroServer` polega na ustawieniu właściwości `MacroPath` urządzenia `MacroServer`
+na katalog zawierający plik z makrem. Następnie należy zrestartować `MacroServer` przez aplikację Astor.

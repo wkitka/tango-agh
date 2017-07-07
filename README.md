@@ -1,6 +1,5 @@
 # Kurs Tango Controls dla KN Integra
 
-Zajęcia w poniedziałki o 18:30 w H113, B4.
 ----------------------------------------
 
 ## Wymagane na zajęciach:
